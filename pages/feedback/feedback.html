@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Purple Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg"
+            alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="search-field d-none d-md-block">
+          <form class="d-flex align-items-center h-100" action="#">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="请输入查询内容" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-gradient-primary" type="button">查询</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="../../images/faces/face1.jpg" alt="image">
+                <span class="availability-status online"></span>
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">王花花</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="../samples/register.html">
+                <i class="mdi mdi-cached mr-2 text-success"></i>
+                修改密码
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../samples/login.html">
+                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                退出登录
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <span class="menu-title">首页</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-title">应用管理</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">APP更新管理</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">APP开关管理</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/icons/mdi.html">
+              <span class="menu-title">轮播图管理</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/forms/basic_elements.html">
+              <span class="menu-title">产品分类</span>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/charts/chartjs.html">
+              <span class="menu-title">贷款列表</span>
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/tables/basic-table.html">
+              <span class="menu-title">产品列表</span>
+              <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false"
+              aria-controls="general-pages">
+              <span class="menu-title">推广运营</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-medical-bag menu-icon"></i>
+            </a>
+            <div class="collapse" id="general-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/blank-page.html"> 外采量 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/H5-page.html"> H5页面注册渠道链接</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/info-page.html"> 注册数据详情</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/account/account.html">
+              <span class="menu-title">账户管理</span>
+              <i class="mdi mdi-account-card-details menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/feedback/feedback.html">
+              <span class="menu-title">咨询反馈</span>
+              <i class="mdi mdi-information menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              咨询反馈
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">咨询反馈</a></li>
+                <li class="breadcrumb-item active" aria-current="page">咨询反馈</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">反馈问题类型</label>
+                        <div class="col-sm-9">
+                          <select class="form-control">
+                            <option>运营商</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">数据详情</h4>
+                  <div style="position: relative;overflow: auto;">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th noWrap>
+                            反馈类型
+                          </th>
+                          <th noWrap>
+                            用户
+                          </th>
+                          <th noWrap>
+                            反馈时间
+                          </th>
+                          <th noWrap style="width: 500px;">
+                            反馈内容
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td noWrap>
+                            运营商
+                          </td>
+                          <td noWrap>
+                            赵丽颖
+                          </td>
+                          <td noWrap>
+                            2019-09-19
+                          </td>
+                          <td noWrap style="width: 500px;line-height: 1.4;">
+                            关于我们我要举报意见反馈快照删除图片举报地图反馈黄页提交站长平台网站收录新闻源收录申请赔付 欢迎您的意见及建议 感谢您使用360搜索!请告诉我们您对360搜索的意见和...
+                          </td>
+                        </tr>
+                        <tr noWrap>
+                          <td colspan="999" style="text-align: center;color: #909090;">暂无数据</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- 分页器 6月26 start -->
+                  <div class="template-demo" style="margin-top: 50px;text-align: center;font-size: 14px;">
+                    <span>共128条</span>
+                    <div style="display: inline-block;padding: 0 10px;">
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw"><i
+                          class="mdi mdi-chevron-double-left"></i>首页</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw"></i>1</button>
+                      <button type="button" class="pageBtn btn-gradient-primary btn-fw">2</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">3</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">4</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">5</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">6</button>
+                      <button type="button" class="pageBtn btn-fw" style="cursor: not-allowed;">...</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">99</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">100</button>
+                      <button type="button" class="pageBtn btn-outline-primary btn-fw">末页<i
+                          class="mdi mdi-chevron-double-right"></i></button>
+                    </div>
+                    <label for="pageInput">前往</label>
+                    <input type="text" class="pageBtn form-control mb-2 mr-sm-2" id="pageInput" placeholder=""
+                      style="display: inline-block; width: 52px;padding: 0 7px; text-align: center;">
+                    <span>页</span>
+                  </div>
+                  <!-- 分页器 6月26 end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://www.bjhongxin.cn/">鸿信创嘉</a></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- 弹窗 6月26 start -->
+  <div class="Modal_Mask">
+    <div class="Modal">
+      <div class="card-body">
+        <div class="ju_Between">
+          <h4 class="card-title">添加APP更新管理</h4>
+          <i class="mdi mdi-close" style="cursor: pointer;"></i>
+        </div>
+        <form class="forms-sample">
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">开关</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入开关">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">目标外壳</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入目标外壳">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">版本号</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入版本号">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">渠道</label>
+              <div class="col-sm-10">
+                <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                  <option>iOS</option>
+                  <option>Android</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">更新内容</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+              </div>
+            </div>
+          <button type="submit" class="btn btn-gradient-primary mr-2">提交</button>
+          <button class="btn btn-light">取消</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 弹窗 6月26 end -->
+
+
+
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+
+  <script>
+    $('.addModalBtn').on('click', function () {
+      $('.Modal_Mask').show();
+    })
+    $('.Modal_Mask i.mdi-close').on('click', function () {
+      $(this).parents('.Modal_Mask').hide();
+    })
+  </script>
+</body>
+
+</html>
