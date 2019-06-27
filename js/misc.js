@@ -100,4 +100,11 @@
     $('.Modal_Mask i.mdi-close').on('click', function () {
       $(this).parents('.Modal_Mask').hide();
     })
+    // 弹窗 Modal 修改密码
+    $('.passwordModalBtn').on('click', function () {
+      $('.Modal_password').show();
+    })
+    $('.Modal_password i.mdi-close').on('click', function () {
+      $(this).parents('.Modal_password').hide();
+    })
 })(jQuery);
