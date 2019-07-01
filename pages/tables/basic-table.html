@@ -51,7 +51,7 @@
               </div>
             </a>
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item passwordModalBtn" href="javascript:void(0);">
+              <a class="dropdown-item" href="javascript:void(0);" onclick="ChangePassWord()">
                 <i class="mdi mdi-cached mr-2 text-success"></i>
                 修改密码
               </a>
@@ -178,7 +178,7 @@
                     <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="请输入内容">
                     <button type="submit" class="btn btn-gradient-primary mb-2" style="display: flex;padding: 13px 20px;margin: 0 10px;">
                       <i class="mdi mdi-magnify"></i>&nbsp;&nbsp;查询</button>
-                    <div class="btn btn-gradient-primary mb-2 addModalBtn" style="display: flex;padding: 13px 20px;margin: 0 10px;">
+                    <div class="btn btn-gradient-primary mb-2" style="display: flex;padding: 13px 20px;margin: 0 10px;" onclick="Product_list()">
                       <i class="mdi mdi-bible"></i>&nbsp;&nbsp;新增产品</div>
                   </form>
                 </div>
@@ -240,8 +240,8 @@
                             2016/07/89&nbsp;11:11:11
                           </td>
                           <td nowrap style="text-align: center;">
-                            <label class="badge addModalBtn" style="border: 1px solid #999;"><i class="mdi mdi-table-edit"
-                                style="margin-right: 2px;"></i>编辑</label>
+                            <label class="badge addModalBtn" style="border: 1px solid #999;" onclick="Product_list()">
+                              <i class="mdi mdi-table-edit" style="margin-right: 2px;"></i>编辑</label>
                             <label class="badge badge-danger"><i class="mdi mdi-delete-forever"
                                 style="margin-right: 2px;"></i>删除</label>
                           </td>
@@ -292,108 +292,7 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-  <!-- 弹窗 6月26 start -->
-  <div class="Modal_Mask">
-    <div class="Modal">
-      <div class="card-body">
-        <div class="ju_Between">
-          <h4 class="card-title">产品列表</h4>
-          <i class="mdi mdi-close" style="cursor: pointer;"></i>
-        </div>
-        <form class="forms-sample">
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">放款方名称</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入放款方名称">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">贷款金额（元）</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入贷款金额（元）">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">贷款利率</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入贷款利率">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">贷款期限</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入贷款期限">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">产品名称</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入产品名称">
-            </div>
-          </div>
-           <div class="form-group row">
-             <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">是否隐藏</label>
-             <div class="col-sm-10">
-               <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                 <option>隐藏中</option>
-                 <option>显示中</option>
-               </select>
-             </div>
-           </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">创建时间</label>
-              <div class="col-sm-10">
-                <input type="date" class="form-control" id="exampleInputPassword2" placeholder="请输入产品名称">
-              </div>
-            </div>
-          <button type="submit" class="btn btn-gradient-primary mr-2">提交</button>
-          <button class="btn btn-light">取消</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- 弹窗 6月26 end -->
-  <!-- 弹窗 6月27 添加修改密码 start -->
-  <div class="Modal_password">
-    <div class="container-scroller">
-      <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="content-wrapper d-flex align-items-center auth" style="background: none;">
-          <div class="row w-100">
-            <div class="col-lg-4 mx-auto">
-              <div class="auth-form-light text-left p-5">
-                <div class="ju_Between">
-                  <h4 class="card-title">修改密码</h4>
-                  <i class="mdi mdi-close" style="cursor: pointer;"></i>
-                </div>
-                <form class="pt-3">
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1"
-                      placeholder="请输入旧密码">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
-                      placeholder="请输入新密码">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
-                      placeholder="请确认新密码">
-                  </div>
-                  <div class="mt-3">
-                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
-                      href="../../index.html">确认</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- content-wrapper ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
 
-  </div>
-  <!-- 弹窗 6月27 添加修改密码 end -->
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
@@ -406,6 +305,45 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->
+  <!-- 贝宝娃 弹窗 -->
+  <script src="http://admin.beibaowa.com/js/jquery.min.js"></script>
+  <script src="http://admin.beibaowa.com/js/layer/layer.js"></script>
+  <script>
+    function ChangePassWord() {
+      layer.open({
+        type: 2,
+        zIndex: 100000,
+        top: "20px",
+        shade: 0.5,
+        title: ['修改密码', 'background:#fff'],
+        area: ['500px', '580px'],
+        resize: true, //��ֹ������Ĵ�С
+        fix: true, // �̶�
+        maxmin: false,
+        //offset : top,
+        //closeBtn: 1,
+        content: ['../samples/register.html', 'no'],
+      })
+    }
+  </script>
+  <script>
+    function Product_list() {
+      layer.open({
+        type: 2,
+        zIndex: 100000,
+        top: "20px",
+        shade: 0.5,
+        title: ['添加产品列表', 'background:#fff'],
+        area: ['750px', '580px'],
+        resize: true, //��ֹ������Ĵ�С
+        fix: true, // �̶�
+        maxmin: false,
+        //offset : top,
+        //closeBtn: 1,
+        content: ['../modal/Product_list.html', 'no'],
+      })
+    }
+  </script>
 </body>
 
 </html>

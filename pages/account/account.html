@@ -52,7 +52,7 @@
               </div>
             </a>
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item passwordModalBtn" href="javascript:void(0);">
+              <a class="dropdown-item" href="javascript:void(0);" onclick="ChangePassWord()">
                 <i class="mdi mdi-cached mr-2 text-success"></i>
                 修改密码
               </a>
@@ -181,7 +181,8 @@
                       style="display: flex;padding: 13px 20px;margin: 0 10px;"><i
                         class="mdi mdi-magnify"></i>&nbsp;&nbsp;查询</button>
                     <div class="btn btn-gradient-primary mb-2 addModalBtn"
-                      style="display: flex;padding: 13px 20px;margin: 0 10px;"><i
+                      style="display: flex;padding: 13px 20px;margin: 0 10px;"
+                      onclick="APP_update()"><i
                         class="mdi mdi-account-multiple-plus"></i>&nbsp;&nbsp;添加账户</div>
                   </form>
                 </div>
@@ -253,7 +254,7 @@
                             正常
                           </td>
                           <td noWrap style="text-align: center;">
-                            <label class="badge badge-info addModalBtnPC"><i class="mdi mdi-settings" style="margin-right: 2px;"></i>配置PC端权限</label>
+                            <label class="badge badge-info addModalBtnPC" onclick="Configure_PC()"><i class="mdi mdi-settings" style="margin-right: 2px;"></i>配置PC端权限</label>
                           </td>
                         </tr>
                         <tr nowrap="">
@@ -306,180 +307,7 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-  <!-- 弹窗 6月26 前端：赵国廷 start -->
-  <div class="Modal_Mask">
-    <div class="Modal">
-      <div class="card-body">
-        <div class="ju_Between">
-          <h4 class="card-title">账户管理</h4>
-          <i class="mdi mdi-close" style="cursor: pointer;"></i>
-        </div>
-        <form class="forms-sample">
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">账户名称</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入账户名称">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">姓名</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入姓名">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">手机号</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入手机号">
-            </div>
-          </div>
-           <div class="form-group row">
-             <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">性别</label>
-             <div class="col-sm-10" style="display: flex">
-               <div class="form-check" style="margin-right: 20px;">
-                 <label class="form-check-label">
-                   <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"
-                     checked="">
-                   男
-                   <i class="input-helper"></i></label>
-               </div>
-               <div class="form-check">
-                 <label class="form-check-label">
-                   <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2"
-                     checked="">
-                   女
-                   <i class="input-helper"></i></label>
-               </div>
-             </div>
-           </div>
-           <div class="form-group row">
-             <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">角色</label>
-             <div class="col-sm-10">
-               <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                 <option>后勤人员</option>
-                 <option>老师</option>
-                 <option>园长</option>
-               </select>
-             </div>
-           </div>
-           <div class="form-group row">
-             <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">入职日期</label>
-             <div class="col-sm-10">
-               <input type="date" class="form-control" id="exampleInputPassword2" placeholder="请输入入职日期">
-             </div>
-           </div>
-           <div class="form-group row">
-             <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">角色</label>
-             <div class="col-sm-10">
-               <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                 <option>正常</option>
-                 <option>不正常</option>
-               </select>
-             </div>
-           </div>
-          <button type="submit" class="btn btn-gradient-primary mr-2">提交</button>
-          <button class="btn btn-light">取消</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- 弹窗 6月26 前端：赵国廷 end -->
-  <!-- 配置PC端权限 6月26 前端：赵国廷 start -->
-  <div class="Modal_MaskPC">
-    <div class="Modal">
-      <div class="card-body">
-        <div class="ju_Between">
-          <h4 class="card-title">配置PC端权限</h4>
-          <i class="mdi mdi-close" style="cursor: pointer;"></i>
-        </div>
-        <form class="forms-sample">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    活动管理
-                    <i class="input-helper"></i></label>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="form-group" style="display: flex;justify-content: space-around;">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    查看
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    添加
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    编辑
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    删除
-                    <i class="input-helper"></i></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    园所安全
-                    <i class="input-helper"></i></label>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="form-group" style="display: flex;justify-content: space-around;">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    查看
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    添加
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    编辑
-                    <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    删除
-                    <i class="input-helper"></i></label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-gradient-primary mr-2">提交</button>
-          <button class="btn btn-light">取消</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- 配置PC端权限 6月26 前端：赵国廷 end -->
+
 
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
@@ -492,16 +320,64 @@
   <script src="../../js/misc.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script>
-      // 配置PC端权限 6月26 前端：赵国廷 弹窗 Modal
-      $('.addModalBtnPC').on('click', function () {
-       $('.Modal_MaskPC').show();
-      })
-      $('.Modal_MaskPC i.mdi-close').on('click', function () {
-       $(this).parents('.Modal_MaskPC').hide();
-      })
-  </script>
   <!-- End custom js for this page-->
+     <!-- 贝宝娃 弹窗 -->
+     <script src="http://admin.beibaowa.com/js/jquery.min.js"></script>
+     <script src="http://admin.beibaowa.com/js/layer/layer.js"></script>
+    <script>
+      function ChangePassWord() {
+        layer.open({
+          type: 2,
+          zIndex: 100000,
+          top: "20px",
+          shade: 0.5,
+          title: ['修改密码', 'background:#fff'],
+          area: ['500px', '580px'],
+          resize: true, //��ֹ������Ĵ�С
+          fix: true, // �̶�
+          maxmin: false,
+          //offset : top,
+          //closeBtn: 1,
+          content: ['../samples/register.html', 'no'],
+        })
+      }
+    </script>
+    <script>
+      function APP_update() {
+        layer.open({
+          type: 2,
+          zIndex: 100000,
+          top: "20px",
+          shade: 0.5,
+          title: ['添加账户', 'background:#fff'],
+          area: ['750px', '580px'],
+          resize: true, //��ֹ������Ĵ�С
+          fix: true, // �̶�
+          maxmin: false,
+          //offset : top,
+          //closeBtn: 1,
+          content: ['../modal/Account.html', 'no'],
+        })
+      }
+    </script>
+    <script>
+      function Configure_PC() {
+        layer.open({
+          type: 2,
+          zIndex: 100000,
+          top: "20px",
+          shade: 0.5,
+          title: ['配置PC端权限', 'background:#fff'],
+          area: ['750px', '580px'],
+          resize: true, //��ֹ������Ĵ�С
+          fix: true, // �̶�
+          maxmin: false,
+          //offset : top,
+          //closeBtn: 1,
+          content: ['../modal/Configure_PC.html', 'no'],
+        })
+      }
+    </script>
 </body>
 
 </html>

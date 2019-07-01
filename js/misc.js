@@ -85,7 +85,7 @@
   });
 
 
-    // <!-- 隐藏显示按钮 切换 -->
+    // <!-- 表单 隐藏显示按钮 切换 -->
     $('.td_ShowHide').on('click', function () {
       if ($(this).hasClass('cur')) {
         $(this).attr("class", "td_ShowHide")
@@ -93,18 +93,5 @@
         $(this).attr("class", "td_ShowHide cur")
       }
     })
-    // 弹窗 Modal
-    $('.addModalBtn').on('click', function () {
-      $('.Modal_Mask').show();
-    })
-    $('.Modal_Mask i.mdi-close').on('click', function () {
-      $(this).parents('.Modal_Mask').hide();
-    })
-    // 弹窗 Modal 修改密码
-    $('.passwordModalBtn').on('click', function () {
-      $('.Modal_password').show();
-    })
-    $('.Modal_password i.mdi-close').on('click', function () {
-      $(this).parents('.Modal_password').hide();
-    })
+
 })(jQuery);

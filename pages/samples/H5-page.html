@@ -51,7 +51,7 @@
               </div>
             </a>
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item passwordModalBtn" href="javascript:void(0);">
+              <a class="dropdown-item" href="javascript:void(0);" onclick="ChangePassWord()">
                 <i class="mdi mdi-cached mr-2 text-success"></i>
                 修改密码
               </a>
@@ -177,7 +177,7 @@
                       style="font-size: 14px;padding: 0 10px 10px 0;">搜索渠道(英文)</label>
                     <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="请输入内容">
                     <button type="submit" class="btn btn-gradient-primary mb-2" style="display: flex;padding: 13px 20px;margin: 0 10px;"><i class="mdi mdi-magnify"></i>&nbsp;&nbsp;查询</button>
-                    <div class="btn btn-gradient-primary mb-2 addModalBtn" style="display: flex;padding: 13px 20px;margin: 0 10px;"><i class="mdi mdi-link-variant"></i>&nbsp;&nbsp;新增链接</div>
+                    <div class="btn btn-gradient-primary mb-2" style="display: flex;padding: 13px 20px;margin: 0 10px;" onclick="H5_page_modal()"><i class="mdi mdi-link-variant"></i>&nbsp;&nbsp;新增链接</div>
                   </form>
                 </div>
               </div>
@@ -236,11 +236,12 @@
                             2019-19-19
                           </td>
                           <td noWrap style="text-align: center;">
-                            <label class="badge addModalBtn" style="border: 1px solid #999;">
+                            <label class="badge addModalBtn" style="border: 1px solid #999;" onclick="H5_page_modal()">
                               <i class="mdi mdi-table-edit" style="margin-right: 2px;"></i>编辑</label>
                             <label class="badge badge-info"><i class="mdi mdi-cart-off" style="margin-right: 2px;"></i>打折详情</label>
-                            <label class="badge badge-success">正常</label>
-                            <label class="badge badge-danger">停用对外账号</label>
+<label class="badge ShowHideBtn">
+  <div class="ShowHideBtn_Circle"></div>
+</label>
                           </td>
                         </tr>
                         <tr nowrap="">
@@ -292,99 +293,7 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-    <!-- 弹窗 6月26 前端：赵国廷 start -->
-    <div class="Modal_Mask">
-      <div class="Modal">
-        <div class="card-body">
-          <div class="ju_Between">
-            <h4 class="card-title">H5页面注册渠道链接</h4>
-            <i class="mdi mdi-close" style="cursor: pointer;"></i>
-          </div>
-          <form class="forms-sample">
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">渠道名称</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入渠道名称">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">渠道名称缩写</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入渠道名称缩写">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">渠道链接</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入渠道链接">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">折扣状态</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入折扣状态">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">折扣</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleInputPassword2" placeholder="请输入折扣">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleInputPassword2" class="col-sm-2 col-form-label tar">折扣日期</label>
-              <div class="col-sm-10">
-                <input type="date" class="form-control" id="exampleInputPassword2" placeholder="请输入折扣日期">
-              </div>
-            </div>
-            <button type="submit" class="btn btn-gradient-primary mr-2">提交</button>
-            <button class="btn btn-light">取消</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- 弹窗 6月26 前端：赵国廷 end -->
-    <!-- 弹窗 6月27 添加修改密码 start -->
-    <div class="Modal_password">
-      <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-          <div class="content-wrapper d-flex align-items-center auth" style="background: none;">
-            <div class="row w-100">
-              <div class="col-lg-4 mx-auto">
-                <div class="auth-form-light text-left p-5">
-                  <div class="ju_Between">
-                    <h4 class="card-title">修改密码</h4>
-                    <i class="mdi mdi-close" style="cursor: pointer;"></i>
-                  </div>
-                  <form class="pt-3">
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-lg" id="exampleInputUsername1"
-                        placeholder="请输入旧密码">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
-                        placeholder="请输入新密码">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control form-control-lg" id="exampleInputEmail1"
-                        placeholder="请确认新密码">
-                    </div>
-                    <div class="mt-3">
-                      <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn"
-                        href="../../index.html">确认</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- content-wrapper ends -->
-        </div>
-        <!-- page-body-wrapper ends -->
-      </div>
 
-    </div>
-    <!-- 弹窗 6月27 添加修改密码 end -->
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
@@ -397,6 +306,55 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->
+   <!-- 贝宝娃 弹窗 -->
+   <script src="http://admin.beibaowa.com/js/jquery.min.js"></script>
+   <script src="http://admin.beibaowa.com/js/layer/layer.js"></script>
+   <script>
+     function ChangePassWord() {
+       layer.open({
+         type: 2,
+         zIndex: 100000,
+         top: "20px",
+         shade: 0.5,
+         title: ['修改密码', 'background:#fff'],
+         area: ['500px', '580px'],
+         resize: true, //��ֹ������Ĵ�С
+         fix: true, // �̶�
+         maxmin: false,
+         //offset : top,
+         //closeBtn: 1,
+         content: ['../samples/register.html', 'no'],
+       })
+     }
+   </script>
+    <script>
+      function H5_page_modal() {
+        layer.open({
+          type: 2,
+          zIndex: 100000,
+          top: "20px",
+          shade: 0.5,
+          title: ['添加H5页面注册渠道链接', 'background:#fff'],
+          area: ['750px', '580px'],
+          resize: true, //��ֹ������Ĵ�С
+          fix: true, // �̶�
+          maxmin: false,
+          //offset : top,
+          //closeBtn: 1,
+          content: ['../modal/H5_page_modal.html', 'no'],
+        })
+      }
+    </script>
+    <script>
+        // 正常停用对外账号 按钮切换
+        $('.ShowHideBtn').on('click', function () {
+            if ($(this).hasClass('cur')) {
+            $(this).attr("class", "badge ShowHideBtn")
+          } else {
+            $(this).attr("class", "badge ShowHideBtn cur")
+          }
+        })
+    </script>
 </body>
 
 </html>
